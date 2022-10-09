@@ -18,7 +18,7 @@ interface DefaultRace {
 	tips?: null | string;
 }
 
-const hollyWoodBetsAlgo = (fileItems: any[]) => {
+const hollywoodBetsAlgo = (fileItems: any[]) => {
 	const races = [];
 
 	const defaultRace: DefaultRace = {
@@ -53,4 +53,4 @@ const hollyWoodBetsAlgo = (fileItems: any[]) => {
 
 const jpotQuickmixAlgo = () => {};
 
-export const extractRaces = (fileItems: any[]) => hollyWoodBetsAlgo(fileItems);
+export const extractRaces = (fileItems: any[]) => hollywoodBetsAlgo(fileItems);

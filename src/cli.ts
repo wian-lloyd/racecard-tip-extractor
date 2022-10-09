@@ -12,7 +12,6 @@ interface InPdfFilePath {
 
 interface CliSessionOut {
 	inPdfFilePaths: InPdfFilePath[];
-	// inDocxFilePath: string;
 }
 
 const readDir = async (): Promise<InPdfFilePath[]> => {
@@ -100,12 +99,7 @@ export const cliSession = async (): Promise<CliSessionOut> => {
 		}
 	}
 
-	// const inDirDocx = inDir.filter((dir) => dir.includes('.docx')); // TODO: Rename to file type.
-	// const selectedDocx = (await cliSelect({ values: inDirDocx })).value;
-	// const inDocxFilePath = IN_DIR_PATH + selectedDocx;
-
 	return {
 		inPdfFilePaths,
-		// inDocxFilePath,
 	};
 };

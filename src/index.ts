@@ -1,8 +1,7 @@
 import prompt from 'prompt';
 
 import { cliSession } from './cli';
-import { parseFileItems, extractRaces } from './lib/pdf';
-// import { extractRawText } from './lib/docx';
+import { parseFileItems, extractRaces } from './parse';
 
 async function main() {
 	try {

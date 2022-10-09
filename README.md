@@ -29,13 +29,12 @@ Wian Lloyd/
 
 7. Type the following commands:
 
-8. cd racecard-tip-extractor/
-
-9. npm i
-
-10. npm run build
-
-11. npm start
+```
+cd racecard-tip-extractor-master/
+npm i
+npm run build
+npm start
+```
 
 Press ctrl+c and close the terminal window.
 
@@ -51,7 +50,10 @@ Installation is complete.
 
 13. Type the following command:
 
-14. npm start
+```
+cd racecard-tip-extractor-master/
+npm start
+```
 
 15. Read multiple files?(Y/n) - Do you want to extract the tips of multiple pdf files? Yes is default, press enter. Type n and press enter for single files.
 

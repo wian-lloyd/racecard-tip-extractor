@@ -27,7 +27,7 @@ Wian Lloyd/
 
 6. Either should start in the "%USERPROFILE%" directory which will look something like "C:\Users\wian>".
 
-7. Type the following commands:
+7. Type the following commands(run each line one by one):
 
 ```
 cd racecard-tip-extractor-master/
@@ -48,7 +48,7 @@ Installation is complete.
 
 12. Either should start in the "%USERPROFILE%" directory which will look something like "C:\Users\wian>".
 
-13. Type the following command:
+13. Type the following commands(run each line one by one):
 
 ```
 cd racecard-tip-extractor-master/

@@ -55,6 +55,6 @@ cd racecard-tip-extractor-master/
 npm start
 ```
 
-15. Read multiple files?(Y/n) - Do you want to extract the tips of multiple pdf files? Yes is default, press enter. Type n and press enter for single files.
+14. Read multiple files?(Y/n) - Do you want to extract the tips of multiple pdf files? Yes is default, press enter. Type n and press enter for single files.
 
-16. Specify PDF file directory(default is "/home/wian/repos/private/racecard-tip-extractor") - Here you can specify a different location for pdf files. For now, since we copied the files to the "in" directory, press enter.
+15. Specify PDF file directory(default is "/home/wian/repos/private/racecard-tip-extractor") - Here you can specify a different location for pdf files. For now, since we copied the files to the "in" directory, press enter.

@@ -16,7 +16,7 @@ interface CliSessionOut {
 
 const readDir = async (): Promise<InPdfFilePath[]> => {
 	const { PWD, INIT_CWD } = process.env;
-	const { multiSelect, startDir } = await prompt.get([
+	const { multiSelect = 'test', startDir } = await prompt.get([
 		{ description: 'Read multiple files?(Y/n)', name: 'multiSelect' },
 		{ description: `Specify PDF file directory(default is "${PWD ? PWD : INIT_CWD + '/' + IN_DIR_PATH}")`, name: 'startDir' },
 	]);
@@ -26,7 +26,8 @@ const readDir = async (): Promise<InPdfFilePath[]> => {
 		pdfsDir = IN_DIR_PATH;
 	}
 
-	const multipleFiles: boolean = multiSelect.toString().toLowerCase() === '';
+	const sanitisedMultiSelect = multiSelect.toString().toLowerCase();
+	const multipleFiles: boolean = sanitisedMultiSelect === 'y' || sanitisedMultiSelect === '';
 
 	const inDir = await fs.readdir(pdfsDir);
 	const inDirPdf = inDir.filter((dir) => dir.includes('.pdf')); // TODO: Rename to file type e.g. schedule.

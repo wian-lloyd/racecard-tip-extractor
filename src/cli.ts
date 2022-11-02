@@ -16,7 +16,7 @@ interface CliSessionOut {
 
 const readDir = async (): Promise<InPdfFilePath[]> => {
 	const { PWD, INIT_CWD } = process.env;
-	const { multiSelect = 'test', startDir } = await prompt.get([
+	const { multiSelect, startDir } = await prompt.get([
 		{ description: 'Read multiple files?(Y/n)', name: 'multiSelect' },
 		{ description: `Specify PDF file directory(default is "${PWD ? PWD : INIT_CWD + '/' + IN_DIR_PATH}")`, name: 'startDir' },
 	]);

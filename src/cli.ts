@@ -26,7 +26,8 @@ const readDir = async (): Promise<InPdfFilePath[]> => {
 		pdfsDir = IN_DIR_PATH;
 	}
 
-	const multipleFiles: boolean = multiSelect.toString().toLowerCase() === '';
+	const sanitisedMultiSelect = multiSelect.toString().toLowerCase();
+	const multipleFiles: boolean = sanitisedMultiSelect === 'y' || sanitisedMultiSelect === '';
 
 	const inDir = await fs.readdir(pdfsDir);
 	const inDirPdf = inDir.filter((dir) => dir.includes('.pdf')); // TODO: Rename to file type e.g. schedule.
